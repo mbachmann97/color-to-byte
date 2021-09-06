@@ -8,8 +8,8 @@ public class ColorToByte {
 		byte packed = packRgb(rgb);
 		Color unpackedColor = unpackRgb(packed);
 		
-		System.out.println("ORIGINAL 	" + c.toString());
-		System.out.println("BYTE		" + unpackedColor.toString());
+		System.out.println("ORIGINAL -> " + c.toString());
+		System.out.println("BYTE -> " + unpackedColor.toString());
 	}
 	
 	public static byte packRgb(int rawRgb) {
