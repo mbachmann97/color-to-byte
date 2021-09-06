@@ -2,14 +2,14 @@ import java.awt.Color;
 
 public class ColorToByte {
 	public static void main(String[] args) {
-		Color c = new Color(255, 150, 255);
+		Color c = new Color(80, 150, 255);
 		int rgb = c.getRGB();
 		
 		byte packed = packRgb(rgb);
 		Color unpackedColor = unpackRgb(packed);
 		
-		System.out.println(c.toString());
-		System.out.println(unpackedColor.toString());
+		System.out.println("ORIGINAL 	" + c.toString());
+		System.out.println("BYTE		" + unpackedColor.toString());
 	}
 	
 	public static byte packRgb(int rawRgb) {
